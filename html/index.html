@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Red Andromeda</title>
+
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/pers-style.css" rel="stylesheet">
+</head>
+
+<!--<body style="background-image: url('../images/background.png');background-size: 100% 100%;background-repeat: no-repeat;background-attachment: fixed; ">-->
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Red Andromeda</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#inicio">Inicio <span class="sr-only">(current)</span></a></li>
+          <li><a href="#ciclo">Ciclo Actual</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container" style="margin-top: 25px;">
+
+    <div class="row" id="inicio" style="margin: 40px;">
+      <div class="col-md-4">
+        <img src="../images/logo.png" height="50%" width="50%" class="img-responsive" alt="Responsive image">
+      </div>
+      <div class="col-md-8">
+        <blockquote class="blockquote-reverse">
+          <h3>Frase del Ciclo.</h3>
+          <p><font size="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</font></p>
+          <font size="3"><footer>Someone famous in <cite title="Source Title">Source Title</cite></footer></font>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="row" id="ciclo">
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DDTMY-fVOWc"></iframe>
+          </div>
+          <div class="caption">
+            <h3>Hola Natura!</h3>
+            <p>No te pierdas de ninguna propocion dentro del Ciclo, aprovechalo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <img src="../images/seccion-revista_c_10.jpg">
+          <div class="caption">
+            <h3>Revista Ciclo 10!</h3>
+            <p>No te pierdas de ninguna propocion dentro del Ciclo, aprovechalo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="eventos" style="margin-bottom: 40px;">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Proximos Eventos</div>
+          <!-- Table -->
+          <div class="table-responsive">
+            <table class="table"> 
+              <caption>No te pierdas ninguno de los Encuentros y Eventos especiales que Red Andromeda tiene preparados para ti</caption> 
+              <thead> 
+                <tr> 
+                  <th>#</th> 
+                  <th>Nombre del Evento</th> 
+                  <th>Fecha del Evento</th> 
+                  <th>Ubicacion</th>
+                  <th>Confirmar Asistencia</th> 
+                </tr> 
+              </thead> 
+              <tbody> 
+                <tr> 
+                  <th scope="row">1</th> 
+                  <td>Encuentro</td> 
+                  <td>07/07/2017</td> 
+                  <td>Mi casa</td>
+                  <td>OK</td> 
+                </tr> 
+                <tr> 
+                  <th scope="row">2</th> 
+                  <td>Encuentro</td> 
+                  <td>07/07/2017</td> 
+                  <td>Mi casa</td>
+                  <td>OK</td> 
+                </tr> 
+                <tr> 
+                  <th scope="row">3</th> 
+                  <td>Encuentro</td> 
+                  <td>07/07/2017</td> 
+                  <td>Mi casa</td>
+                  <td>OK</td> 
+                </tr>  
+              </tbody> 
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="contacto">
+      <div class="row" style="margin-top:20px;">
+        <div class="col-md-12">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d822.9721409151095!2d-99.05908217082158!3d19.448733299179718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb82ca655259%3A0xabe2864aac600ced!2sCalle+Poniente+1+21%2C+Cuchilla+del+Tesoro%2C+07900+Ciudad+de+M%C3%A9xico%2C+CDMX!5e1!3m2!1ses!2smx!4v1499790372994" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+         <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
+           <h3><b>Ponte en Contacto</b></h3>
+           <div class="form-group">
+            <label class="control-label" for="Nombre">Nombres</label>
+            <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autofocus />
+          </div>            
+          <div class="form-group">
+            <label class="control-label" for="Motivo">Motivo de Contacto</label>
+            <select name="Motivo" class="form-control">
+              <option value="Consulta General">Consulta General</option>
+              <option value="Realizar Pedido">Realizar Pedido</option>
+              <option value="Informe un problema">Informe un problema</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="Empresa">Empresa</label>
+            <input type="text" class="form-control" id="Empresa" name="Empresa" placeholder="Introduzca el nombre de su empresa" required />
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="Correo">Dirección de Correo Electrónico</label>
+            <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca su correo electrónico" required />
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="Mensaje">Mensaje</label>
+            <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required ></textarea>
+          </div>
+          <div class="form-group">                
+            <input type="submit" class="btn btn-primary" value="Enviar">
+            <input type="reset" class="btn btn-default" value="Limpiar">                
+          </div>
+          <div id="respuesta" style="display: none;"></div>
+        </form>
+      </div>
+    </div>
+
+    <hr style="border:15px;">
+    
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1" style="margin-top: 20px;">
+       <address>
+        <strong>Red Andromeda Oficinas.</strong><br>
+        Poniente 1 Mz. 19 Lt. 19 Local B<br>
+        Cuchilla del Tesoro, CP 07900<br>
+        <abbr title="Phone">Tel:</abbr> 4070-7388
+      </address>
+    </div>
+    <div class="col-md-5 col-md-offset-1" style="margin-top: 20px;">
+      <address>
+        <strong>Ma. de los Angeles Macias</strong><br>
+        <a href="mailto:#">anggy_macias10@hotmail.com</a>
+      </address>
+      <address>
+        <strong>Hector Fernando Flores</strong><br>
+        <a href="mailto:#">hferflo60_natura12@hotmail.com</a>
+      </address>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
